@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\DSRPracticeProject.Api.props" />
-</Project>
