@@ -4,6 +4,38 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>api.xml</DocumentationFile>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\DSRPracticeProject.Context\DSRPracticeProject.Context.csproj" />
+    <ProjectReference Include="..\..\..\Data\Migrations\DSRPracticeProject.Context.MigrationsMSSQL\DSRPracticeProject.Context.MigrationsMSSQL.csproj" />
+    <ProjectReference Include="..\..\..\Data\Migrations\DSRPracticeProject.Context.MigrationsPostgreSQL\DSRPracticeProject.Context.MigrationsPostgreSQL.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRPracticeProject.Services.Settings\DSRPracticeProject.Services.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Shared\DSRPracticeProject.Common\DSRPracticeProject.Common.csproj" />
+    <ProjectReference Include="..\DSRPracticeProject.Api.Settings\DSRPracticeProject.Api.Settings.csproj" />
+  </ItemGroup>
 
 </Project>

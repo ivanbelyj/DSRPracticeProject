@@ -1,0 +1,72 @@
+name: dockercompose1869300876595541410
+services:
+  dsrnetschool_api:
+    build:
+      context: C:\src\Net\DSRPracticeProject
+      dockerfile: Systems/Api/DSRPracticeProject.Api/Dockerfile
+    depends_on:
+      dsrnetschool_postgresql:
+        condition: service_started
+      dsrnetschool_redis:
+        condition: service_started
+    environment:
+      APISPECIAL__HELLOMESSAGE: Hello, DSR PracticeProject from Docker!
+      CACHE__CACHELIFETYME: "1"
+      CACHE__URI: host.docker.internal:6379,allowAdmin=true,abortConnect=false
+      DATABASE__CONNECTIONSTRING: Server=dsrnetschool_postgresql;Port=5432;Database=DSRPracticeProject;User
+        Id=postgres;Password=Passw0rd;
+      DATABASE__TYPE: PostgreSQL
+      IDENTITY__URL: http://host.docker.internal:10001
+      MAIN__MAINURL: http://host.docker.internal:10000
+      RABBITMQ__PASSWORD: guest
+      RABBITMQ__URI: amqp://host.docker.internal:5672
+      RABBITMQ__USERNAME: guest
+      SWAGGER__ENABLED: "true"
+      SWAGGER__OAUTHCLIENTID: ""
+      SWAGGER__OAUTHCLIENTSECRET: ""
+    image: dsrnetschoolapi
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "10000"
+      protocol: tcp
+  dsrnetschool_postgresql:
+    environment:
+      POSTGRES_NAME: postgres
+      POSTGRES_PASSWORD: Passw0rd
+      POSTGRES_USER: postgres
+    image: postgres:14.1
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ivanb\.docker-conf\postgresql\data
+      target: /var/lib/postgresql/data
+      bind:
+        create_host_path: true
+  dsrnetschool_redis:
+    image: redis
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ivanb\.docker-conf\redis\data
+      target: /data
+      bind:
+        create_host_path: true
+networks:
+  shared_dsrnetschool_net:
+    name: dsr_net_school
+    driver: bridge

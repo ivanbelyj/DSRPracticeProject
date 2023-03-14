@@ -1,0 +1,12 @@
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.deps.json
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.pdb
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.csproj.AssemblyReference.cache
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.AssemblyInfoInputs.cache
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.AssemblyInfo.cs
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.csproj.CoreCompileInputs.cache
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\refint\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\DSRPracticeProject.Settings.pdb
+C:\src\Net\DSRPracticeProject\Shared\DSRPracticeProject.Settings\obj\Debug\net7.0\ref\DSRPracticeProject.Settings.dll

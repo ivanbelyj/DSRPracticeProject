@@ -1,0 +1,12 @@
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\bin\Debug\net7.0\DSRPracticeProject.Context.Entities.deps.json
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\bin\Debug\net7.0\DSRPracticeProject.Context.Entities.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\bin\Debug\net7.0\DSRPracticeProject.Context.Entities.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.csproj.AssemblyReference.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.AssemblyInfoInputs.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.AssemblyInfo.cs
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.csproj.CoreCompileInputs.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\refint\DSRPracticeProject.Context.Entities.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\DSRPracticeProject.Context.Entities.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context.Entities\obj\Debug\net7.0\ref\DSRPracticeProject.Context.Entities.dll

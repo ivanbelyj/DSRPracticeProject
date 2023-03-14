@@ -1,0 +1,125 @@
+name: dockercompose1869300876595541410
+services:
+  dsrnetschool_api:
+    build:
+      context: C:\src\Net\DSRPracticeProject
+      dockerfile: Systems/Api/DSRPracticeProject.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: DSRPracticeProject.Api
+      target: base
+    container_name: DSRPracticeProject.Api
+    depends_on:
+      dsrnetschool_postgresql:
+        condition: service_started
+      dsrnetschool_redis:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      APISPECIAL__HELLOMESSAGE: Hello, DSR PracticeProject from Docker!
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CACHE__CACHELIFETYME: "1"
+      CACHE__URI: host.docker.internal:6379,allowAdmin=true,abortConnect=false
+      DATABASE__CONNECTIONSTRING: Server=dsrnetschool_postgresql;Port=5432;Database=DSRPracticeProject;User
+        Id=postgres;Password=Passw0rd;
+      DATABASE__TYPE: PostgreSQL
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      IDENTITY__URL: http://host.docker.internal:10001
+      MAIN__MAINURL: http://host.docker.internal:10000
+      NUGET_FALLBACK_PACKAGES: ""
+      RABBITMQ__PASSWORD: guest
+      RABBITMQ__URI: amqp://host.docker.internal:5672
+      RABBITMQ__USERNAME: guest
+      SWAGGER__ENABLED: "true"
+      SWAGGER__OAUTHCLIENTID: ""
+      SWAGGER__OAUTHCLIENTSECRET: ""
+    image: dsrnetschoolapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/DSRPracticeProject.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "10000"
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\src\Net\DSRPracticeProject
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ivanb\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ivanb\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ivanb\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ivanb\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+  dsrnetschool_postgresql:
+    environment:
+      POSTGRES_NAME: postgres
+      POSTGRES_PASSWORD: Passw0rd
+      POSTGRES_USER: postgres
+    image: postgres:14.1
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ivanb\.docker-conf\postgresql\data
+      target: /var/lib/postgresql/data
+      bind:
+        create_host_path: true
+  dsrnetschool_redis:
+    image: redis
+    networks:
+      shared_dsrnetschool_net: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ivanb\.docker-conf\redis\data
+      target: /data
+      bind:
+        create_host_path: true
+networks:
+  shared_dsrnetschool_net:
+    name: dsr_net_school
+    driver: bridge

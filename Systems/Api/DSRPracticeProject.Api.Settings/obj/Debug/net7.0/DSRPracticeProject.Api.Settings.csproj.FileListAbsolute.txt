@@ -1,0 +1,15 @@
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\bin\Debug\net7.0\DSRPracticeProject.Api.Settings.deps.json
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\bin\Debug\net7.0\DSRPracticeProject.Api.Settings.dll
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\bin\Debug\net7.0\DSRPracticeProject.Api.Settings.pdb
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.csproj.AssemblyReference.cache
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.AssemblyInfoInputs.cache
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.AssemblyInfo.cs
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.csproj.CoreCompileInputs.cache
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.dll
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\refint\DSRPracticeProject.Api.Settings.dll
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.pdb
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\ref\DSRPracticeProject.Api.Settings.dll
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.pdb
+C:\src\Net\DSRPracticeProject\Systems\Api\DSRPracticeProject.Api.Settings\obj\Debug\net7.0\DSRPracticeProject.Api.Settings.csproj.CopyComplete

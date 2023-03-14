@@ -1,0 +1,17 @@
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Context.deps.json
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Context.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Context.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.csproj.AssemblyReference.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.AssemblyInfoInputs.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.AssemblyInfo.cs
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.csproj.CoreCompileInputs.cache
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\refint\DSRPracticeProject.Context.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\ref\DSRPracticeProject.Context.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Context.Entities.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Settings.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\bin\Debug\net7.0\DSRPracticeProject.Context.Entities.pdb
+C:\src\Net\DSRPracticeProject\Data\DSRPracticeProject.Context\obj\Debug\net7.0\DSRPracticeProject.Context.csproj.CopyComplete

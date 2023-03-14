@@ -19,7 +19,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Api", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Api.Settings", "Systems\Api\DSRPracticeProject.Api.Settings\DSRPracticeProject.Api.Settings.csproj", "{A312FFF5-48AD-4288-9C49-8CD55D227744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPracticeProject.Common", "Shared\DSRPracticeProject.Common\DSRPracticeProject.Common.csproj", "{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Common", "Shared\DSRPracticeProject.Common\DSRPracticeProject.Common.csproj", "{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Settings", "Shared\DSRPracticeProject.Settings\DSRPracticeProject.Settings.csproj", "{5FB2C798-AF6B-4577-84B5-776DAF9EA575}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Services.Settings", "Services\DSRPracticeProject.Services.Settings\DSRPracticeProject.Services.Settings.csproj", "{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BA529688-1B8E-4B38-BBB8-2D1BCB531585}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context", "Data\DSRPracticeProject.Context\DSRPracticeProject.Context.csproj", "{A49B5114-4120-4134-B9A5-7CAB340CEB92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context.Entities", "Data\DSRPracticeProject.Context.Entities\DSRPracticeProject.Context.Entities.csproj", "{218DE68B-852C-432B-9027-02DD3C1F05C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{F5C53E59-4BAF-4667-A60E-F4766C60105D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPracticeProject.Context.MigrationsMSSQL", "Data\Migrations\DSRPracticeProject.Context.MigrationsMSSQL\DSRPracticeProject.Context.MigrationsMSSQL.csproj", "{D8C167BB-998D-4770-8336-27168502A9FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context.MigrationsPostgreSQL", "Data\Migrations\DSRPracticeProject.Context.MigrationsPostgreSQL\DSRPracticeProject.Context.MigrationsPostgreSQL.csproj", "{88BCA163-B404-47B8-98F0-2567439D5126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +55,34 @@ Global
 		{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB2C798-AF6B-4577-84B5-776DAF9EA575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB2C798-AF6B-4577-84B5-776DAF9EA575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB2C798-AF6B-4577-84B5-776DAF9EA575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB2C798-AF6B-4577-84B5-776DAF9EA575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA529688-1B8E-4B38-BBB8-2D1BCB531585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA529688-1B8E-4B38-BBB8-2D1BCB531585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA529688-1B8E-4B38-BBB8-2D1BCB531585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA529688-1B8E-4B38-BBB8-2D1BCB531585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49B5114-4120-4134-B9A5-7CAB340CEB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49B5114-4120-4134-B9A5-7CAB340CEB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49B5114-4120-4134-B9A5-7CAB340CEB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49B5114-4120-4134-B9A5-7CAB340CEB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218DE68B-852C-432B-9027-02DD3C1F05C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218DE68B-852C-432B-9027-02DD3C1F05C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218DE68B-852C-432B-9027-02DD3C1F05C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218DE68B-852C-432B-9027-02DD3C1F05C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C167BB-998D-4770-8336-27168502A9FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C167BB-998D-4770-8336-27168502A9FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C167BB-998D-4770-8336-27168502A9FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C167BB-998D-4770-8336-27168502A9FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BCA163-B404-47B8-98F0-2567439D5126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BCA163-B404-47B8-98F0-2567439D5126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BCA163-B404-47B8-98F0-2567439D5126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BCA163-B404-47B8-98F0-2567439D5126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +93,13 @@ Global
 		{B8F12508-6394-43AA-B14D-1983F643CB3D} = {C81F4F29-E182-466F-BE82-B9759632C359}
 		{A312FFF5-48AD-4288-9C49-8CD55D227744} = {C81F4F29-E182-466F-BE82-B9759632C359}
 		{1FE98DEE-33EE-4F5C-B768-F35EA5DD60BE} = {71C5FBA0-9F78-4378-A1E7-03B9B5036152}
+		{5FB2C798-AF6B-4577-84B5-776DAF9EA575} = {71C5FBA0-9F78-4378-A1E7-03B9B5036152}
+		{2CE4CB1C-6C66-4D27-8CA8-F8607B4540A9} = {43A1F9AA-8773-4C0B-A4CB-1775F620CE1B}
+		{A49B5114-4120-4134-B9A5-7CAB340CEB92} = {56465095-2BBC-40B5-8602-246BA751642C}
+		{218DE68B-852C-432B-9027-02DD3C1F05C0} = {56465095-2BBC-40B5-8602-246BA751642C}
+		{F5C53E59-4BAF-4667-A60E-F4766C60105D} = {56465095-2BBC-40B5-8602-246BA751642C}
+		{D8C167BB-998D-4770-8336-27168502A9FF} = {F5C53E59-4BAF-4667-A60E-F4766C60105D}
+		{88BCA163-B404-47B8-98F0-2567439D5126} = {F5C53E59-4BAF-4667-A60E-F4766C60105D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20BD094F-522A-4584-9134-8ACFB55E1080}

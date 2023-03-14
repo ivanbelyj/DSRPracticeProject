@@ -1,0 +1,15 @@
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\bin\Debug\net7.0\DSRPracticeProject.Services.Settings.deps.json
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\bin\Debug\net7.0\DSRPracticeProject.Services.Settings.dll
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\bin\Debug\net7.0\DSRPracticeProject.Services.Settings.pdb
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.dll
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\bin\Debug\net7.0\DSRPracticeProject.Settings.pdb
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.csproj.AssemblyReference.cache
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.AssemblyInfoInputs.cache
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.AssemblyInfo.cs
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.csproj.CoreCompileInputs.cache
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.csproj.CopyComplete
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.dll
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\refint\DSRPracticeProject.Services.Settings.dll
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\DSRPracticeProject.Services.Settings.pdb
+C:\src\Net\DSRPracticeProject\Services\DSRPracticeProject.Services.Settings\obj\Debug\net7.0\ref\DSRPracticeProject.Services.Settings.dll
