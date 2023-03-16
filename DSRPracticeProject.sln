@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{F5C53E59-4BAF-4667-A60E-F4766C60105D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPracticeProject.Context.MigrationsMSSQL", "Data\Migrations\DSRPracticeProject.Context.MigrationsMSSQL\DSRPracticeProject.Context.MigrationsMSSQL.csproj", "{D8C167BB-998D-4770-8336-27168502A9FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context.MigrationsMSSQL", "Data\Migrations\DSRPracticeProject.Context.MigrationsMSSQL\DSRPracticeProject.Context.MigrationsMSSQL.csproj", "{D8C167BB-998D-4770-8336-27168502A9FF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSRPracticeProject.Context.MigrationsPostgreSQL", "Data\Migrations\DSRPracticeProject.Context.MigrationsPostgreSQL\DSRPracticeProject.Context.MigrationsPostgreSQL.csproj", "{88BCA163-B404-47B8-98F0-2567439D5126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRPracticeProject.Services.Books", "Services\DSRPracticeProject.Services.Books\DSRPracticeProject.Services.Books.csproj", "{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{88BCA163-B404-47B8-98F0-2567439D5126}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88BCA163-B404-47B8-98F0-2567439D5126}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88BCA163-B404-47B8-98F0-2567439D5126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +106,7 @@ Global
 		{F5C53E59-4BAF-4667-A60E-F4766C60105D} = {56465095-2BBC-40B5-8602-246BA751642C}
 		{D8C167BB-998D-4770-8336-27168502A9FF} = {F5C53E59-4BAF-4667-A60E-F4766C60105D}
 		{88BCA163-B404-47B8-98F0-2567439D5126} = {F5C53E59-4BAF-4667-A60E-F4766C60105D}
+		{EB3822C4-8A7A-4391-9AAE-8BC5D3B9929E} = {43A1F9AA-8773-4C0B-A4CB-1775F620CE1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20BD094F-522A-4584-9134-8ACFB55E1080}

@@ -1,53 +1,49 @@
-﻿using DSRPracticeProject.Context.Settings;
+﻿namespace DSRPracticeProject.Context;
+
+using DSRPracticeProject.Context.Settings;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DSRPracticeProject.Context.Factories
+public static class DbContextOptionsFactory
 {
-    public static class DbContextOptionsFactory
+    private const string migrationProjctPrefix = "DSRPracticeProject.Context.Migrations";
+
+    public static DbContextOptions<MainDbContext> Create(string connStr, DbType dbType)
     {
-        private const string migrationProjectPrefix = "DSRPracticeProject.Migrations";
+        var bldr = new DbContextOptionsBuilder<MainDbContext>();
 
-        public static DbContextOptions<MainDbContext> Create(string connString,
-            DbType dbType)
-        {
-            var builder = new DbContextOptionsBuilder<MainDbContext>();
-            Configure(connString, dbType).Invoke(builder);
-            return builder.Options;
-        }
+        Configure(connStr, dbType).Invoke(bldr);
 
-        public static Action<DbContextOptionsBuilder> Configure(
-            string connString, DbType dbType)
+        return bldr.Options;
+    }
+
+    public static Action<DbContextOptionsBuilder> Configure(string connStr, DbType dbType)
+    {
+        return (bldr) =>
         {
-            return (DbContextOptionsBuilder builder) =>
+            switch (dbType)
             {
-                const string migrationsHistoryTableName = "_EFMigrationsHistory";
-                switch (dbType)
-                {
-                    case DbType.PostgreSQL:
-                        builder.UseNpgsql(connString,
-                            opts => opts
+                case DbType.MSSQL:
+                    bldr.UseSqlServer(connStr,
+                        opts => opts
                                 .CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds)
-                                .MigrationsHistoryTable(migrationsHistoryTableName, "public")
-                                .MigrationsAssembly($"{migrationProjectPrefix}{DbType.MSSQL}")
-                            );
-                        break;
-                    case DbType.MSSQL:
-                        builder.UseSqlServer(connString,
-                            opts => opts
+                                .MigrationsHistoryTable("_EFMigrationsHistory", "public")
+                                .MigrationsAssembly($"{migrationProjctPrefix}{DbType.MSSQL}")
+                        );
+                    break;
+
+                case DbType.PostgreSQL:
+                    bldr.UseNpgsql(connStr,
+                        opts => opts
                                 .CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds)
-                                .MigrationsHistoryTable(migrationsHistoryTableName, "public")
-                                .MigrationsAssembly($"{migrationProjectPrefix}{DbType.MSSQL}")
-                            );
-                        break;
-                }
-                builder.EnableSensitiveDataLogging();
-                builder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-            };
-        } 
+                                .MigrationsHistoryTable("_EFMigrationsHistory", "public")
+                                .MigrationsAssembly($"{migrationProjctPrefix}{DbType.PostgreSQL}")
+                        );
+                    break;
+            }
+
+            bldr.EnableSensitiveDataLogging();
+            //bldr.UseLazyLoadingProxies();
+            bldr.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+        };
     }
 }

@@ -13,7 +13,8 @@ namespace DSRPracticeProject.Api.Configuration
                 .AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.SetDefaultSettings();
-                });
+                })
+                .AddValidator();
 
             return services;
         }

@@ -1,4 +1,5 @@
 ﻿using DSRPracticeProject.Api.Settings;
+using DSRPracticeProject.Services.Books;
 using DSRPracticeProject.Services.Settings;
 
 namespace DSRPracticeProject.Api;
@@ -9,7 +10,8 @@ public static class Bootstrapper
     {
         services.AddMainSettings()
             .AddOpenApiSettings()
-            .AddApiSpecialSettings();
+            .AddApiSpecialSettings()
+            .AddBooksService();
 
         return services;
     }

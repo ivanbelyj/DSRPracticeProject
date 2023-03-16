@@ -11,11 +11,13 @@ namespace DSRPracticeProject.Context.Factories
 {
     public class DesignTimeDbContextFactory
     {
-        private const string migrationProjectPrefix = "DSRPracticeProject.Migrations";
+        private const string migrationProjectPrefix = "DSRPracticeProject.Context.Migrations";
 
         public MainDbContext CreateDbContext(string[] args)
         {
-            string provider = (args?[0] ?? DbType.MSSQL.ToString()).ToLower();
+            if (args.Length < 1)
+                throw new ArgumentException("No required argument");
+            string provider = args[0].ToLower();
 
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.context.json")
@@ -32,8 +34,7 @@ namespace DSRPracticeProject.Context.Factories
                         )
                         .Options;
             }
-            else
-            if (provider.Equals($"{DbType.PostgreSQL}".ToLower()))
+            else if (provider.Equals($"{DbType.PostgreSQL}".ToLower()))
             {
                 options = new DbContextOptionsBuilder<MainDbContext>()
                         .UseNpgsql(

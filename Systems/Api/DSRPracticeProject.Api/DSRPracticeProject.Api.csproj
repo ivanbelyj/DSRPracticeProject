@@ -9,9 +9,12 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>0d1fd1d7-a9d4-47a8-ae94-31c87615eac1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
       <PrivateAssets>all</PrivateAssets>
@@ -33,6 +36,7 @@
     <ProjectReference Include="..\..\..\Data\DSRPracticeProject.Context\DSRPracticeProject.Context.csproj" />
     <ProjectReference Include="..\..\..\Data\Migrations\DSRPracticeProject.Context.MigrationsMSSQL\DSRPracticeProject.Context.MigrationsMSSQL.csproj" />
     <ProjectReference Include="..\..\..\Data\Migrations\DSRPracticeProject.Context.MigrationsPostgreSQL\DSRPracticeProject.Context.MigrationsPostgreSQL.csproj" />
+    <ProjectReference Include="..\..\..\Services\DSRPracticeProject.Services.Books\DSRPracticeProject.Services.Books.csproj" />
     <ProjectReference Include="..\..\..\Services\DSRPracticeProject.Services.Settings\DSRPracticeProject.Services.Settings.csproj" />
     <ProjectReference Include="..\..\..\Shared\DSRPracticeProject.Common\DSRPracticeProject.Common.csproj" />
     <ProjectReference Include="..\DSRPracticeProject.Api.Settings\DSRPracticeProject.Api.Settings.csproj" />

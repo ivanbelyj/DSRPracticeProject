@@ -1,25 +1,18 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
+﻿namespace DSRPracticeProject.Settings;
 
+using Microsoft.Extensions.Configuration;
 
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DSRPracticeProject.Settings
+public static class SettingsFactory
 {
-    public static class SettingsFactory
+    public static IConfiguration Create(IConfiguration? configuration = null)
     {
-        public static IConfiguration Create(
-            IConfiguration? configuration = null)
-        {
-            return configuration ?? new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false)
-                .AddJsonFile("appsettings.development.json", optional: true)
-                .AddEnvironmentVariables()
-                .Build();
-        }
+        var conf = configuration ?? new ConfigurationBuilder()
+                                        .SetBasePath(Directory.GetCurrentDirectory())
+                                        .AddJsonFile("appsettings.json", optional: false)
+                                        .AddJsonFile("appsettings.development.json", optional: true)
+                                        .AddEnvironmentVariables()
+                                        .Build();
+
+        return conf;
     }
 }

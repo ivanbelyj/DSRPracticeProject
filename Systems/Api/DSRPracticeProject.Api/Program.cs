@@ -1,6 +1,7 @@
 using DSRPracticeProject.Api;
 using DSRPracticeProject.Api.Configuration;
 using DSRPracticeProject.Context;
+using DSRPracticeProject.Context.Setup;
 using DSRPracticeProject.Services.Settings;
 using DSRPracticeProject.Settings;
 
@@ -22,6 +23,8 @@ services.AddAppDbContext(builder.Configuration);
 services.AddAppHealthChecks();
 services.AddAppVersioning();
 services.AddAppOpenApi(openApiSettings);
+services.AddAppAutoMappers();
+
 services.AddAppControllersAndViews();
 
 services.AddAppServices();
@@ -36,6 +39,8 @@ app.UseAppHealthChecks();
 
 app.UseAppOpenApi();
 
-app.UseAppControllersAndViews();
+DbInitializer.Execute(app.Services);
+DbSeeder.Execute(app.Services, true);
 
+app.UseAppControllersAndViews();
 app.Run();
